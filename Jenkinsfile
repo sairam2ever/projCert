@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir('/opt/docker/projCert/website/Dockerfile') {
+        dir('projCert/Dockerfile') {
           sh 'sudo docker build -t my-docker-image .'
         }
       }
